@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.Properties.Resources.resources
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.Register.resources
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\bin\Debug\CityBookCentre.exe.config
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\bin\Debug\CityBookCentre.exe
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\bin\Debug\CityBookCentre.pdb
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.exe
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.pdb
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.Welcome.resources
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.AdminForm.resources
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.ListForm.resources
