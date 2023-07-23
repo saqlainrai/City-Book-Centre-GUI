@@ -36,6 +36,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(48, 69);
             this.dataGridView1.Name = "dataGridView1";
@@ -76,6 +77,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "previousOrders";
             this.Size = new System.Drawing.Size(451, 556);
+            this.Load += new System.EventHandler(this.previousOrders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

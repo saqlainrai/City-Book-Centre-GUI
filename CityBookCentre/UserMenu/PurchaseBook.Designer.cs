@@ -80,33 +80,41 @@
             // 
             // txtStock
             // 
+            this.txtStock.AllowDrop = true;
             this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStock.Location = new System.Drawing.Point(581, 231);
             this.txtStock.Name = "txtStock";
+            this.txtStock.ReadOnly = true;
             this.txtStock.Size = new System.Drawing.Size(256, 26);
             this.txtStock.TabIndex = 18;
             // 
             // txtLendingCost
             // 
+            this.txtLendingCost.AllowDrop = true;
             this.txtLendingCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLendingCost.Location = new System.Drawing.Point(582, 284);
             this.txtLendingCost.Name = "txtLendingCost";
+            this.txtLendingCost.ReadOnly = true;
             this.txtLendingCost.Size = new System.Drawing.Size(256, 26);
             this.txtLendingCost.TabIndex = 17;
             // 
             // txtPrice
             // 
+            this.txtPrice.AllowDrop = true;
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(121, 286);
             this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(251, 26);
             this.txtPrice.TabIndex = 16;
             // 
             // txtName
             // 
+            this.txtName.AllowDrop = true;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(120, 232);
             this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(251, 26);
             this.txtName.TabIndex = 15;
             // 

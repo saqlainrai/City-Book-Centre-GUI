@@ -31,6 +31,11 @@ namespace CityBookCentre.UserMenu
 
         private void button3_Click(object sender, EventArgs e)
         {
+            txtName.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            txtStock.Text = string.Empty;
+            txtLendingCost.Text = string.Empty;
+
             bool presence = BookDL.findBook(txtReference.Text, ActiveBookDL.allActiveBooks);
             if (presence)
             {
@@ -48,6 +53,11 @@ namespace CityBookCentre.UserMenu
 
         private void PurchaseBook_Load(object sender, EventArgs e)
         {
+            Reset_Controls();
+        }
+
+        public void Reset_Controls()
+        {
             txtReference.Text = string.Empty;
             txtName.Text = string.Empty;
             txtPrice.Text = string.Empty;
@@ -61,13 +71,21 @@ namespace CityBookCentre.UserMenu
         {
             if (txtName.Text != string.Empty)
             {
-                BookDL.purchaseBook(ActiveBookDL.allActiveBooks, BookDL.purchasedBooks);
-                MessageBox.Show("Book Added to your Cart Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (ActiveBookDL.allActiveBooks[Program.idx].getStock() > 0)
+                {
+                    BookDL.purchaseBook(ActiveBookDL.allActiveBooks, BookDL.purchasedBooks);
+                    MessageBox.Show("Book Added to your Cart Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("The Book is out of Stock", "Sorry!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
                 MessageBox.Show("Please Select a Valid Book", "Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            Reset_Controls();
         }
     }
 }

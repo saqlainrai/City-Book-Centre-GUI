@@ -147,6 +147,12 @@
     <Compile Include="UserMenu\feedback.Designer.cs">
       <DependentUpon>feedback.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserMenu\lendBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\lendBook.Designer.cs">
+      <DependentUpon>lendBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMenu\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserMenu\feedback.resx">
       <DependentUpon>feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\lendBook.resx">
+      <DependentUpon>lendBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMenu\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

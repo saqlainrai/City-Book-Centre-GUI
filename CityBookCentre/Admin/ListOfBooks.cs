@@ -40,5 +40,17 @@ namespace CityBookCentre.Admin
             // Set the data source to the list of Person objects
             dataGridView1.DataSource = ActiveBookDL.allActiveBooks;
         }
+
+        private void ListOfBooks_Load(object sender, EventArgs e)
+        {
+            Reset_Controls();
+        }
+
+        public void Reset_Controls()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.Columns.Clear();                //also dataGridView1.Rows.Clear(); 
+            dataGridView1.Refresh();
+        }
     }
 }

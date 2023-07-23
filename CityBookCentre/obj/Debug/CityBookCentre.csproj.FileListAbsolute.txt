@@ -29,3 +29,4 @@ C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.
 C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.UserMenu.cart.resources
 C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.UserMenu.previousOrders.resources
 C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.UserMenu.feedback.resources
+C:\Users\HP\Desktop\FSPs\CityBookCentre\CityBookCentre\obj\Debug\CityBookCentre.UserMenu.lendBook.resources

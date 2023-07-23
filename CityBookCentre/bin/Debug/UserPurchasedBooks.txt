@@ -8,4 +8,3 @@ saqlain,2,Mathematics,350
 saqlain,2,Islamiat,120
 b,2,DSAMalik,1
 w,2,Programming,600
-,,MathsUpdate,10

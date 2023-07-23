@@ -63,13 +63,15 @@
             this.btnPurchase = new System.Windows.Forms.Button();
             this.btnCart = new System.Windows.Forms.Button();
             this.iconCross = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lendBook1 = new CityBookCentre.UserMenu.lendBook();
+            this.feedback1 = new CityBookCentre.UserMenu.feedback();
             this.previousOrders1 = new CityBookCentre.UserMenu.previousOrders();
             this.cart1 = new CityBookCentre.UserMenu.cart();
             this.purchaseBook1 = new CityBookCentre.UserMenu.PurchaseBook();
             this.welcome1 = new CityBookCentre.Admin.welcome();
             this.listOfBooks1 = new CityBookCentre.Admin.ListOfBooks();
             this.addBook1 = new CityBookCentre.Admin.AddBook();
-            this.feedback1 = new CityBookCentre.UserMenu.feedback();
             this.panelHeader.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -104,6 +106,7 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelMain.Controls.Add(this.lendBook1);
             this.panelMain.Controls.Add(this.feedback1);
             this.panelMain.Controls.Add(this.previousOrders1);
             this.panelMain.Controls.Add(this.cart1);
@@ -281,6 +284,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Turquoise;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(271, 32);
             this.panel2.Name = "panel2";
@@ -296,6 +300,9 @@
             this.label2.Size = new System.Drawing.Size(459, 52);
             this.label2.TabIndex = 3;
             this.label2.Text = "City Book Centre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseHover);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
             // btnOrders
             // 
@@ -437,6 +444,30 @@
             this.iconCross.TabIndex = 0;
             this.iconCross.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gotham Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(536, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 19);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
+            // lendBook1
+            // 
+            this.lendBook1.Location = new System.Drawing.Point(-1, -7);
+            this.lendBook1.Name = "lendBook1";
+            this.lendBook1.Size = new System.Drawing.Size(1047, 615);
+            this.lendBook1.TabIndex = 7;
+            // 
+            // feedback1
+            // 
+            this.feedback1.Location = new System.Drawing.Point(127, -23);
+            this.feedback1.Name = "feedback1";
+            this.feedback1.Size = new System.Drawing.Size(777, 571);
+            this.feedback1.TabIndex = 6;
+            // 
             // previousOrders1
             // 
             this.previousOrders1.Location = new System.Drawing.Point(297, -14);
@@ -482,13 +513,6 @@
             this.addBook1.TabIndex = 0;
             this.addBook1.Visible = false;
             // 
-            // feedback1
-            // 
-            this.feedback1.Location = new System.Drawing.Point(127, -23);
-            this.feedback1.Name = "feedback1";
-            this.feedback1.Size = new System.Drawing.Size(777, 571);
-            this.feedback1.TabIndex = 6;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -501,6 +525,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelHeader.ResumeLayout(false);
@@ -562,5 +587,7 @@
         private cart cart1;
         private previousOrders previousOrders1;
         private feedback feedback1;
+        private lendBook lendBook1;
+        private System.Windows.Forms.Label label1;
     }
 }
