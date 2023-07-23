@@ -42,7 +42,8 @@ namespace CityBookCentre.Admin
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Program.main_welcome_window.Show();
         }
         private void label2_Click(object sender, EventArgs e)
         {

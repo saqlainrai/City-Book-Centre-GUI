@@ -39,9 +39,13 @@ namespace CityBookCentre
                     {
                         User temp = new User(txtName.Text, txtPassword.Text, roleBox.SelectedItem.ToString());
                         UserDL.allUsers.Add(temp);
-                        if (addUserInFile("User.txt", temp))
+                        if (addUserInFile("UsersData.txt", temp))
                         {
                             MessageBox.Show("The User is Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Operation Failed", "Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
@@ -61,11 +65,17 @@ namespace CityBookCentre
         }
         private bool addUserInFile(string path, User temp)
         {
-            return true;
-            //if (FileExists)
-            //StreamWriter file = new StreamWriter(path, true);
-            //file.WriteLine(temp.name + "," + temp.password + "," + temp.role);
-            //file.Close();
+            if (File.Exists(path))
+            {
+                StreamWriter file = new StreamWriter(path, true);
+                file.WriteLine(temp.name + "," + temp.password + "," + temp.role);
+                file.Close();
+                return true;    
+            } 
+            else
+            {
+                return false;
+            }
         }
 
         private void eyeBox_Click(object sender, EventArgs e)
@@ -80,10 +90,6 @@ namespace CityBookCentre
                 txtPassword.UseSystemPasswordChar = true;
                 eyeBox.BackgroundImage = Properties.Resources.eye_close;
             }
-        }
-        private void Register_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -103,7 +109,7 @@ namespace CityBookCentre
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
     }
 }

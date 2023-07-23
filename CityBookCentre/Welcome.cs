@@ -24,7 +24,7 @@ namespace CityBookCentre
         private void btnRegister_Click(object sender, EventArgs e)
         {
             Form form = new Register();
-            this.Hide();
+            //this.Hide();
             form.Show();
         }
         private void btnClear_Click(object sender, EventArgs e)

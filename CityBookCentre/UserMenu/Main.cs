@@ -200,7 +200,8 @@ namespace CityBookCentre.UserMenu
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Program.main_welcome_window.Show();
         }
 
         private void Main_Load(object sender, EventArgs e)

@@ -23,6 +23,7 @@ namespace CityBookCentre
         public static int idx = 0;
         public static int ordersCounter = 0;
         public static int incomeCounter = 0;
+        public static Form main_welcome_window;
 
         [STAThread]
         static void Main()
@@ -41,9 +42,10 @@ namespace CityBookCentre
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new UpdateBook());
+            main_welcome_window = new Welcome();
+            Application.Run(main_welcome_window);
             //Application.Run(new Admin.Main());
-            Application.Run(new UserMenu.Main());
+            //Application.Run(new UserMenu.Main());
         }
         [DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
