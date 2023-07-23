@@ -57,12 +57,16 @@ namespace CityBookCentre
                     string check = commonFunction.signIn(txtName.Text, txtPassword.Text);
                     if (check == "Admin")
                     {
+                        Program.refUserName = txtName.Text;
+                        Program.refUserPassword = txtPassword.Text;
                         Form form = new Admin.Main();
                         this.Hide();
                         form.Show();
                     }
                     else if (check == "User")
                     {
+                        Program.refUserName = txtName.Text;
+                        Program.refUserPassword = txtPassword.Text;
                         Form form = new UserMenu.Main();
                         this.Hide(); 
                         form.Show();
@@ -81,6 +85,9 @@ namespace CityBookCentre
             {
                 MessageBox.Show("Please Select a Valid Name", "Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            txtName.Text = string.Empty;
+            txtPassword.Text = string.Empty;
+            txtName.Focus();
         }
         private void Welcome_Load(object sender, EventArgs e)
         {

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.eyeBox = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
@@ -57,6 +57,15 @@
             this.panel3.Size = new System.Drawing.Size(810, 30);
             this.panel3.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Red;
+            this.panel5.Location = new System.Drawing.Point(781, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(26, 24);
+            this.panel5.TabIndex = 4;
+            this.panel5.Click += new System.EventHandler(this.label4_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::CityBookCentre.Properties.Resources.city;
@@ -70,7 +79,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Pink;
+            this.panel4.BackColor = System.Drawing.Color.Silver;
             this.panel4.Controls.Add(this.eyeBox);
             this.panel4.Controls.Add(this.btnClear);
             this.panel4.Controls.Add(this.txtPassword);
@@ -98,7 +107,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.Red;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,7 +165,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSubmit.BackColor = System.Drawing.Color.Turquoise;
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,27 +198,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(271, 52);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(249, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(219, 31);
+            this.label4.Size = new System.Drawing.Size(271, 38);
             this.label4.TabIndex = 0;
             this.label4.Text = "City Book Centre";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Location = new System.Drawing.Point(781, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(26, 24);
-            this.panel5.TabIndex = 4;
-            this.panel5.Click += new System.EventHandler(this.label4_Click);
-            // 
             // Register
             // 
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(809, 440);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel4);

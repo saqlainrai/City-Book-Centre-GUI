@@ -46,10 +46,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(683, 482);
+            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(678, 475);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 43);
+            this.button1.Size = new System.Drawing.Size(138, 50);
             this.button1.TabIndex = 1;
             this.button1.Text = "Show Books";
             this.button1.UseVisualStyleBackColor = false;
@@ -63,6 +66,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "purchasedBooks";
             this.Size = new System.Drawing.Size(936, 632);
+            this.Load += new System.EventHandler(this.purchasedBooks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

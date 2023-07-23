@@ -20,6 +20,9 @@ namespace CityBookCentre.Admin
         }
         private void Main_Load(object sender, EventArgs e)
         {
+            welcome1.Reset_Controls();
+            welcome1.textBox2.Text = "Admin";
+
             welcome1.Visible = true;
             listOfBooks1.Visible = false;
             addBook1.Visible = false;
@@ -63,6 +66,8 @@ namespace CityBookCentre.Admin
         }
         private void btnList_Click(object sender, EventArgs e)
         {
+            listOfBooks1.Reset_Controls();
+
             if (btnList.Focused)
             {
                 btnList.BackColor = Color.DimGray;
@@ -93,6 +98,8 @@ namespace CityBookCentre.Admin
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            addBook1.Reset_Controls();
+
             if (btnAdd.Focused)
             {
                 btnAdd.BackColor = Color.DimGray;
@@ -123,6 +130,8 @@ namespace CityBookCentre.Admin
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            removeBook1.Reset_Controls();
+
             if (btnRemove.Focused)
             {
                 btnRemove.BackColor = Color.DimGray;
@@ -153,6 +162,7 @@ namespace CityBookCentre.Admin
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            updateBook1.Reset_Controls();
             if (btnUpdate.Focused)
             {
                 btnUpdate.BackColor = Color.DimGray;
@@ -186,6 +196,8 @@ namespace CityBookCentre.Admin
         }
         private void btnPurchased_Click(object sender, EventArgs e)
         {
+            purchasedBooks1.Reset_Controls();
+
             if (btnPurchased.Focused)
             {
                 btnPurchased.BackColor = Color.DimGray;

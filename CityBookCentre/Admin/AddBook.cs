@@ -30,10 +30,20 @@ namespace CityBookCentre.Admin
             ActiveBookDL.allActiveBooks.Add(temp);
 
             MessageBox.Show("The Book is Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Reset_Controls();
         }
 
         private void AddBook_Load(object sender, EventArgs e)
         {
+            Reset_Controls();
+        }
+        public void Reset_Controls()
+        { 
+            txtName.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            txtStock.Text = string.Empty;
+            txtCost.Text = string.Empty;
             txtName.Focus();
         }
     }

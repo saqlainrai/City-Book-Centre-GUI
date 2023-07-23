@@ -25,6 +25,4 @@ w,2,NewCheckAdded,7
 w,2,Programming,600
 saqlain,2,Islamiat,120
 w,2,Chemistry,52
-,,Chemistry,52
-,,Physics,3
-,,Physics,3
+saqlain,2,Maths,3

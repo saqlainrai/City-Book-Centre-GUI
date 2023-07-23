@@ -206,6 +206,9 @@ namespace CityBookCentre.UserMenu
 
         private void Main_Load(object sender, EventArgs e)
         {
+            welcome1.Reset_Controls();
+            welcome1.textBox2.Text = "User";
+
             welcome1.Visible = true;
             listOfBooks1.Visible = false;
             purchaseBook1.Visible = false;

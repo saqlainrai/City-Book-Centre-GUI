@@ -20,9 +20,7 @@ namespace CityBookCentre.Admin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Columns.Clear();
-            dataGridView1.DataSource = null;
-            dataGridView1.AutoGenerateColumns = false;
+            Reset_Controls();
 
             dataGridView1.Columns.Add("colName", "Book Name");
             dataGridView1.Columns["colName"].DataPropertyName = "name";
@@ -37,6 +35,17 @@ namespace CityBookCentre.Admin
 
 
             dataGridView1.DataSource = SuggestionDL.suggestions;
+        }
+
+        private void reviews_Load(object sender, EventArgs e)
+        {
+            Reset_Controls();
+        }
+        public void Reset_Controls()
+        {
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = null;
+            dataGridView1.AutoGenerateColumns = false;
         }
     }
 }

@@ -30,11 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnPurchased = new System.Windows.Forms.Button();
+            this.btnIncome = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnList = new System.Windows.Forms.Button();
+            this.btnReviews = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnRules = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.header = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.updateBook1 = new CityBookCentre.Admin.UpdateBook();
+            this.reviews1 = new CityBookCentre.Admin.reviews();
+            this.rules1 = new CityBookCentre.Admin.rules();
+            this.purchasedBooks1 = new CityBookCentre.Admin.purchasedBooks();
+            this.income1 = new CityBookCentre.Admin.income();
+            this.welcome1 = new CityBookCentre.Admin.welcome();
+            this.removeBook1 = new CityBookCentre.Admin.RemoveBook();
+            this.listOfBooks1 = new CityBookCentre.Admin.ListOfBooks();
+            this.addBook1 = new CityBookCentre.Admin.AddBook();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconCross = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,34 +75,14 @@
             this.whatsNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.iconCross = new System.Windows.Forms.PictureBox();
-            this.btnPurchased = new System.Windows.Forms.Button();
-            this.btnIncome = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnList = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnRules = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.updateBook1 = new CityBookCentre.Admin.UpdateBook();
-            this.reviews1 = new CityBookCentre.Admin.reviews();
-            this.rules1 = new CityBookCentre.Admin.rules();
-            this.purchasedBooks1 = new CityBookCentre.Admin.purchasedBooks();
-            this.income1 = new CityBookCentre.Admin.income();
-            this.welcome1 = new CityBookCentre.Admin.welcome();
-            this.removeBook1 = new CityBookCentre.Admin.RemoveBook();
-            this.listOfBooks1 = new CityBookCentre.Admin.ListOfBooks();
-            this.addBook1 = new CityBookCentre.Admin.AddBook();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -103,235 +103,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(270, 692);
             this.panelMenu.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Rockwell Extra Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(288, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(459, 52);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "City Book Centre";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseHover);
-            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.Aquamarine;
-            this.panelHeader.Controls.Add(this.header);
-            this.panelHeader.Location = new System.Drawing.Point(269, 120);
-            this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1031, 60);
-            this.panelHeader.TabIndex = 5;
-            // 
-            // header
-            // 
-            this.header.AutoSize = true;
-            this.header.Font = new System.Drawing.Font("Gotham Bold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.header.Location = new System.Drawing.Point(440, 11);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(119, 38);
-            this.header.TabIndex = 6;
-            this.header.Text = "Home";
-            this.header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelMain.Controls.Add(this.updateBook1);
-            this.panelMain.Controls.Add(this.reviews1);
-            this.panelMain.Controls.Add(this.rules1);
-            this.panelMain.Controls.Add(this.purchasedBooks1);
-            this.panelMain.Controls.Add(this.income1);
-            this.panelMain.Controls.Add(this.welcome1);
-            this.panelMain.Controls.Add(this.removeBook1);
-            this.panelMain.Controls.Add(this.listOfBooks1);
-            this.panelMain.Controls.Add(this.addBook1);
-            this.panelMain.Location = new System.Drawing.Point(270, 180);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1027, 542);
-            this.panelMain.TabIndex = 6;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Wheat;
-            this.panel1.Controls.Add(this.iconCross);
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.ForeColor = System.Drawing.Color.Moccasin;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 30);
-            this.panel1.TabIndex = 7;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.windowsToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1300, 30);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
-            this.newToolStripMenuItem.Text = "New";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
-            this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
-            this.saveAsToolStripMenuItem.Text = "Save As";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 26);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // windowsToolStripMenuItem
-            // 
-            this.windowsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pinTabToolStripMenuItem,
-            this.dockToolStripMenuItem,
-            this.updateTerminalToolStripMenuItem,
-            this.resetToolStripMenuItem});
-            this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
-            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
-            this.windowsToolStripMenuItem.Text = "Windows";
-            // 
-            // pinTabToolStripMenuItem
-            // 
-            this.pinTabToolStripMenuItem.Name = "pinTabToolStripMenuItem";
-            this.pinTabToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
-            this.pinTabToolStripMenuItem.Text = "Pin Tab";
-            // 
-            // dockToolStripMenuItem
-            // 
-            this.dockToolStripMenuItem.Name = "dockToolStripMenuItem";
-            this.dockToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
-            this.dockToolStripMenuItem.Text = "Dock";
-            // 
-            // updateTerminalToolStripMenuItem
-            // 
-            this.updateTerminalToolStripMenuItem.Name = "updateTerminalToolStripMenuItem";
-            this.updateTerminalToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
-            this.updateTerminalToolStripMenuItem.Text = "Update Terminal";
-            // 
-            // resetToolStripMenuItem
-            // 
-            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
-            this.resetToolStripMenuItem.Text = "Reset";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewHelpToolStripMenuItem,
-            this.getHelpToolStripMenuItem,
-            this.aboutProgramToolStripMenuItem,
-            this.privacyToolStripMenuItem,
-            this.whatsNewToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // viewHelpToolStripMenuItem
-            // 
-            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.viewHelpToolStripMenuItem.Text = "View Help";
-            // 
-            // getHelpToolStripMenuItem
-            // 
-            this.getHelpToolStripMenuItem.Name = "getHelpToolStripMenuItem";
-            this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.getHelpToolStripMenuItem.Text = "Get Help";
-            // 
-            // aboutProgramToolStripMenuItem
-            // 
-            this.aboutProgramToolStripMenuItem.Name = "aboutProgramToolStripMenuItem";
-            this.aboutProgramToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.aboutProgramToolStripMenuItem.Text = "About Program";
-            // 
-            // privacyToolStripMenuItem
-            // 
-            this.privacyToolStripMenuItem.Name = "privacyToolStripMenuItem";
-            this.privacyToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.privacyToolStripMenuItem.Text = "Privacy";
-            // 
-            // whatsNewToolStripMenuItem
-            // 
-            this.whatsNewToolStripMenuItem.Name = "whatsNewToolStripMenuItem";
-            this.whatsNewToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.whatsNewToolStripMenuItem.Text = "What\'s New";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Turquoise;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(270, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1031, 90);
-            this.panel2.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Turquoise;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Gotham Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(806, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "City Book Centre is a \\n no profit Organization";
-            // 
-            // iconCross
-            // 
-            this.iconCross.BackColor = System.Drawing.Color.Red;
-            this.iconCross.Location = new System.Drawing.Point(1269, 2);
-            this.iconCross.Name = "iconCross";
-            this.iconCross.Size = new System.Drawing.Size(26, 26);
-            this.iconCross.TabIndex = 0;
-            this.iconCross.TabStop = false;
-            this.iconCross.Click += new System.EventHandler(this.iconCross_Click);
             // 
             // btnPurchased
             // 
@@ -498,6 +269,59 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Rockwell Extra Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(288, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(459, 52);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "City Book Centre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseHover);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.Aquamarine;
+            this.panelHeader.Controls.Add(this.header);
+            this.panelHeader.Location = new System.Drawing.Point(269, 120);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1031, 60);
+            this.panelHeader.TabIndex = 5;
+            // 
+            // header
+            // 
+            this.header.AutoSize = true;
+            this.header.Font = new System.Drawing.Font("Gotham Bold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.header.Location = new System.Drawing.Point(440, 11);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(119, 38);
+            this.header.TabIndex = 6;
+            this.header.Text = "Home";
+            this.header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelMain.Controls.Add(this.welcome1);
+            this.panelMain.Controls.Add(this.updateBook1);
+            this.panelMain.Controls.Add(this.reviews1);
+            this.panelMain.Controls.Add(this.rules1);
+            this.panelMain.Controls.Add(this.purchasedBooks1);
+            this.panelMain.Controls.Add(this.income1);
+            this.panelMain.Controls.Add(this.removeBook1);
+            this.panelMain.Controls.Add(this.listOfBooks1);
+            this.panelMain.Controls.Add(this.addBook1);
+            this.panelMain.Location = new System.Drawing.Point(270, 180);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1027, 542);
+            this.panelMain.TabIndex = 6;
+            // 
             // updateBook1
             // 
             this.updateBook1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -564,6 +388,182 @@
             this.addBook1.TabIndex = 0;
             this.addBook1.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
+            this.panel1.Controls.Add(this.iconCross);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.ForeColor = System.Drawing.Color.Moccasin;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1300, 30);
+            this.panel1.TabIndex = 7;
+            // 
+            // iconCross
+            // 
+            this.iconCross.BackColor = System.Drawing.Color.Red;
+            this.iconCross.Location = new System.Drawing.Point(1269, 2);
+            this.iconCross.Name = "iconCross";
+            this.iconCross.Size = new System.Drawing.Size(26, 26);
+            this.iconCross.TabIndex = 0;
+            this.iconCross.TabStop = false;
+            this.iconCross.Click += new System.EventHandler(this.iconCross_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.windowsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1300, 28);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.newToolStripMenuItem.Text = "New";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.saveAsToolStripMenuItem.Text = "Save As";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // windowsToolStripMenuItem
+            // 
+            this.windowsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pinTabToolStripMenuItem,
+            this.dockToolStripMenuItem,
+            this.updateTerminalToolStripMenuItem,
+            this.resetToolStripMenuItem});
+            this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
+            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.windowsToolStripMenuItem.Text = "Windows";
+            // 
+            // pinTabToolStripMenuItem
+            // 
+            this.pinTabToolStripMenuItem.Name = "pinTabToolStripMenuItem";
+            this.pinTabToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.pinTabToolStripMenuItem.Text = "Pin Tab";
+            // 
+            // dockToolStripMenuItem
+            // 
+            this.dockToolStripMenuItem.Name = "dockToolStripMenuItem";
+            this.dockToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.dockToolStripMenuItem.Text = "Dock";
+            // 
+            // updateTerminalToolStripMenuItem
+            // 
+            this.updateTerminalToolStripMenuItem.Name = "updateTerminalToolStripMenuItem";
+            this.updateTerminalToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.updateTerminalToolStripMenuItem.Text = "Update Terminal";
+            // 
+            // resetToolStripMenuItem
+            // 
+            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.resetToolStripMenuItem.Text = "Reset";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewHelpToolStripMenuItem,
+            this.getHelpToolStripMenuItem,
+            this.aboutProgramToolStripMenuItem,
+            this.privacyToolStripMenuItem,
+            this.whatsNewToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // viewHelpToolStripMenuItem
+            // 
+            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.viewHelpToolStripMenuItem.Text = "View Help";
+            // 
+            // getHelpToolStripMenuItem
+            // 
+            this.getHelpToolStripMenuItem.Name = "getHelpToolStripMenuItem";
+            this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.getHelpToolStripMenuItem.Text = "Get Help";
+            // 
+            // aboutProgramToolStripMenuItem
+            // 
+            this.aboutProgramToolStripMenuItem.Name = "aboutProgramToolStripMenuItem";
+            this.aboutProgramToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.aboutProgramToolStripMenuItem.Text = "About Program";
+            // 
+            // privacyToolStripMenuItem
+            // 
+            this.privacyToolStripMenuItem.Name = "privacyToolStripMenuItem";
+            this.privacyToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.privacyToolStripMenuItem.Text = "Privacy";
+            // 
+            // whatsNewToolStripMenuItem
+            // 
+            this.whatsNewToolStripMenuItem.Name = "whatsNewToolStripMenuItem";
+            this.whatsNewToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.whatsNewToolStripMenuItem.Text = "What\'s New";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Turquoise;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(270, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1031, 90);
+            this.panel2.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Turquoise;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Gotham Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(806, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(412, 19);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "City Book Centre is a \\n no profit Organization";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -584,20 +584,19 @@
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panelMain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

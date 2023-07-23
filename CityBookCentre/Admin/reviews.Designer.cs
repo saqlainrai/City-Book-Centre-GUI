@@ -45,7 +45,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(777, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 44);
@@ -62,6 +65,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "reviews";
             this.Size = new System.Drawing.Size(1014, 643);
+            this.Load += new System.EventHandler(this.reviews_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

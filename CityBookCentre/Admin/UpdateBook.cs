@@ -24,31 +24,60 @@ namespace CityBookCentre.Admin
 
         }
 
+        public void Reset_Controls()
+        {
+            txtName.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            txtStock.Text = string.Empty;
+            txtLendingCost.Text = string.Empty;
+
+            dataGridView1.DataSource = null;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Refresh();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.Columns.Clear();
-            dataGridView1.DataSource = null;
+            Reset_Controls();
 
             dataGridView1.AutoGenerateColumns = false;
 
-            dataGridView1.Columns.Add("colName", "Name");
-            dataGridView1.Columns["colName"].DataPropertyName = "name";
+            if (ActiveBookDL.allActiveBooks.Count > 0)
+            {
+                // Add columns manually and arrange them according to your desire
+                dataGridView1.Columns.Add("colName", "Name");
+                dataGridView1.Columns["colName"].DataPropertyName = "name";
 
-            dataGridView1.Columns.Add("colPrice", "Price");
-            dataGridView1.Columns["colPrice"].DataPropertyName = "price";
+                dataGridView1.Columns.Add("colPrice", "Price");
+                dataGridView1.Columns["colPrice"].DataPropertyName = "price";
 
-            dataGridView1.Columns.Add("colStock", "Stock");
-            dataGridView1.Columns["colStock"].DataPropertyName = "stock";
+                dataGridView1.Columns.Add("colStock", "Stock");
+                dataGridView1.Columns["colStock"].DataPropertyName = "stock";
 
-            dataGridView1.Columns.Add("colCost", "Lending Cost");
-            dataGridView1.Columns["colCost"].DataPropertyName = "lendingCost";
+                dataGridView1.Columns.Add("colCost", "Lending Cost");
+                dataGridView1.Columns["colCost"].DataPropertyName = "lendingCost";
 
-            dataGridView1.DataSource = ActiveBookDL.allActiveBooks;
+                // Set the data source to the list of Person objects
+                dataGridView1.DataSource = ActiveBookDL.allActiveBooks;
+            }
+            else
+            {
+                dataGridView1.Columns.Add("colComment", "Currently No Book is Available on the Board");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Get the selected row, if any
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                int index = dataGridView1.SelectedCells[0].RowIndex;
 
+                ActiveBookDL.allActiveBooks[index] = new BL.ActiveBook(txtName.Text, int.Parse(txtPrice.Text), int.Parse(txtStock.Text), int.Parse(txtLendingCost.Text));
+
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = ActiveBookDL.allActiveBooks;
+            }
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -75,6 +104,11 @@ namespace CityBookCentre.Admin
                 txtLendingCost.Text = string.Empty;
                 // Add more textboxes for other columns as needed
             }
+        }
+
+        private void UpdateBook_Load(object sender, EventArgs e)
+        {
+            Reset_Controls();
         }
     }
 }

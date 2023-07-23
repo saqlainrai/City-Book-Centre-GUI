@@ -26,5 +26,15 @@ namespace CityBookCentre.Admin
         {
 
         }
+        public void Reset_Controls()
+        {
+            textBox1.Text = Program.refUserName;
+            textBox3.Text = Program.refUserPassword;
+        }
+
+        private void welcome_Load(object sender, EventArgs e)
+        {
+            Reset_Controls();
+        }
     }
 }
