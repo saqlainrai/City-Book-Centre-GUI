@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack.Core.1.1.0\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack.Shell.1.1.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +52,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForm.cs">
+    <Compile Include="Admin\AddBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\income.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\income.Designer.cs">
+      <DependentUpon>income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListOfBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ListOfBooks.Designer.cs">
+      <DependentUpon>ListOfBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <Compile Include="Admin\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\purchasedBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\purchasedBooks.Designer.cs">
+      <DependentUpon>purchasedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveBook.Designer.cs">
+      <DependentUpon>RemoveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\reviews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\reviews.Designer.cs">
+      <DependentUpon>reviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\rules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\rules.Designer.cs">
+      <DependentUpon>rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateBook.Designer.cs">
+      <DependentUpon>UpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\welcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="BL\ActiveBook.cs" />
     <Compile Include="BL\Book.cs" />
@@ -64,11 +124,46 @@
     <Compile Include="DL\SuggestionDL.cs" />
     <Compile Include="DL\UserBookDL.cs" />
     <Compile Include="DL\UserDL.cs" />
-    <Compile Include="ListForm.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\billForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\billForm.Designer.cs">
+      <DependentUpon>billForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\feedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\feedback.Designer.cs">
+      <DependentUpon>feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListForm.Designer.cs">
-      <DependentUpon>ListForm.cs</DependentUpon>
+    <Compile Include="UserMenu\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\previousOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\previousOrders.Designer.cs">
+      <DependentUpon>previousOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu\PurchaseBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMenu\PurchaseBook.Designer.cs">
+      <DependentUpon>PurchaseBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
@@ -84,28 +179,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListForm.resx">
-      <DependentUpon>ListForm.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\income.resx">
+      <DependentUpon>income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ListOfBooks.resx">
+      <DependentUpon>ListOfBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\purchasedBooks.resx">
+      <DependentUpon>purchasedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RemoveBook.resx">
+      <DependentUpon>RemoveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\reviews.resx">
+      <DependentUpon>reviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\rules.resx">
+      <DependentUpon>rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UpdateBook.resx">
+      <DependentUpon>UpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\billForm.resx">
+      <DependentUpon>billForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\feedback.resx">
+      <DependentUpon>feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\previousOrders.resx">
+      <DependentUpon>previousOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu\PurchaseBook.resx">
+      <DependentUpon>PurchaseBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\CityBookCentre.BL.ActiveBook.datasource" />
     <None Include="Properties\DataSources\CityBookCentre.DL.ActiveBookDL.datasource" />
     <None Include="Properties\Settings.settings">
@@ -132,6 +265,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye_open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tip-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rules-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_exit-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_exit-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_5851-removebg-preview_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchased.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridsemi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

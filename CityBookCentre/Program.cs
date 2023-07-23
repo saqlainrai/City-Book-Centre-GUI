@@ -6,6 +6,8 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CityBookCentre.BL;
+using CityBookCentre.Admin;
+using CityBookCentre.UserMenu;
 
 namespace CityBookCentre
 {
@@ -39,7 +41,9 @@ namespace CityBookCentre
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListForm());
+            //Application.Run(new UpdateBook());
+            //Application.Run(new Admin.Main());
+            Application.Run(new UserMenu.Main());
         }
         [DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

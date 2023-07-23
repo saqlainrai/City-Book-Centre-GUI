@@ -28,188 +28,184 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.header = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.role = new System.Windows.Forms.Label();
-            this.password = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.roleBox = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.eyeBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.roleBox = new System.Windows.Forms.ComboBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.header);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 100);
-            this.panel1.TabIndex = 3;
+            this.panel3.BackColor = System.Drawing.Color.Wheat;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(810, 30);
+            this.panel3.TabIndex = 0;
             // 
-            // header
+            // pictureBox2
             // 
-            this.header.AutoSize = true;
-            this.header.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.header.Location = new System.Drawing.Point(251, 28);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(253, 36);
-            this.header.TabIndex = 1;
-            this.header.Text = "City Book Centre";
+            this.pictureBox2.BackgroundImage = global::CityBookCentre.Properties.Resources.city;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 105);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(350, 298);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.eyeBox);
-            this.panel2.Controls.Add(this.role);
-            this.panel2.Controls.Add(this.password);
-            this.panel2.Controls.Add(this.name);
-            this.panel2.Controls.Add(this.btnClear);
-            this.panel2.Controls.Add(this.btnSubmit);
-            this.panel2.Controls.Add(this.txtPassword);
-            this.panel2.Controls.Add(this.txtName);
-            this.panel2.Controls.Add(this.roleBox);
-            this.panel2.Location = new System.Drawing.Point(381, 106);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(385, 345);
-            this.panel2.TabIndex = 5;
+            this.panel4.BackColor = System.Drawing.Color.Pink;
+            this.panel4.Controls.Add(this.eyeBox);
+            this.panel4.Controls.Add(this.btnClear);
+            this.panel4.Controls.Add(this.txtPassword);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.roleBox);
+            this.panel4.Controls.Add(this.btnSubmit);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.txtName);
+            this.panel4.Location = new System.Drawing.Point(350, 105);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(457, 298);
+            this.panel4.TabIndex = 3;
             // 
-            // role
+            // eyeBox
             // 
-            this.role.AutoSize = true;
-            this.role.Location = new System.Drawing.Point(48, 179);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(42, 20);
-            this.role.TabIndex = 3;
-            this.role.Text = "Role";
-            // 
-            // password
-            // 
-            this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(46, 116);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(78, 20);
-            this.password.TabIndex = 3;
-            this.password.Text = "Password";
-            // 
-            // name
-            // 
-            this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(46, 56);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(51, 20);
-            this.name.TabIndex = 3;
-            this.name.Text = "Name";
+            this.eyeBox.BackgroundImage = global::CityBookCentre.Properties.Resources.eye_close;
+            this.eyeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.eyeBox.Location = new System.Drawing.Point(371, 119);
+            this.eyeBox.Name = "eyeBox";
+            this.eyeBox.Size = new System.Drawing.Size(36, 23);
+            this.eyeBox.TabIndex = 8;
+            this.eyeBox.TabStop = false;
+            this.eyeBox.Click += new System.EventHandler(this.eyeBox_Click);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Location = new System.Drawing.Point(212, 259);
+            this.btnClear.Location = new System.Drawing.Point(286, 225);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(130, 35);
-            this.btnClear.TabIndex = 5;
+            this.btnClear.Size = new System.Drawing.Size(121, 29);
+            this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.Color.Green;
-            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSubmit.Location = new System.Drawing.Point(40, 259);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(175, 35);
-            this.btnSubmit.TabIndex = 4;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(40, 141);
+            this.txtPassword.Location = new System.Drawing.Point(164, 120);
             this.txtPassword.MaxLength = 8;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(267, 26);
-            this.txtPassword.TabIndex = 2;
+            this.txtPassword.Size = new System.Drawing.Size(205, 22);
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // txtName
+            // label3
             // 
-            this.txtName.Location = new System.Drawing.Point(40, 79);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(302, 26);
-            this.txtName.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(57, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Role";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(57, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Password";
             // 
             // roleBox
             // 
             this.roleBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.roleBox.FormattingEnabled = true;
             this.roleBox.Items.AddRange(new object[] {
-            "--Enter Role--",
+            "---Enter Role---",
             "Admin",
             "User"});
-            this.roleBox.Location = new System.Drawing.Point(40, 202);
+            this.roleBox.Location = new System.Drawing.Point(164, 169);
             this.roleBox.Name = "roleBox";
-            this.roleBox.Size = new System.Drawing.Size(302, 28);
-            this.roleBox.TabIndex = 3;
+            this.roleBox.Size = new System.Drawing.Size(243, 24);
+            this.roleBox.TabIndex = 2;
+            this.roleBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // eyeBox
+            // btnSubmit
             // 
-            this.eyeBox.BackColor = System.Drawing.Color.Transparent;
-            this.eyeBox.BackgroundImage = global::CityBookCentre.Properties.Resources.eye_close;
-            this.eyeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eyeBox.Location = new System.Drawing.Point(308, 141);
-            this.eyeBox.Name = "eyeBox";
-            this.eyeBox.Size = new System.Drawing.Size(34, 26);
-            this.eyeBox.TabIndex = 6;
-            this.eyeBox.TabStop = false;
-            this.eyeBox.Click += new System.EventHandler(this.eyeBox_Click);
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSubmit.Location = new System.Drawing.Point(147, 225);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(133, 29);
+            this.btnSubmit.TabIndex = 2;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.BackgroundImage = global::CityBookCentre.Properties.Resources.city;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 106);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(363, 345);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(57, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(164, 71);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(243, 22);
+            this.txtName.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(271, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(219, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "City Book Centre";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 452);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
-            this.DoubleBuffered = true;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ClientSize = new System.Drawing.Size(809, 404);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register Here!";
-            this.Load += new System.EventHandler(this.Register_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -218,15 +214,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label role;
-        private System.Windows.Forms.Label password;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.ComboBox roleBox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox roleBox;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.PictureBox eyeBox;
+        private System.Windows.Forms.Label label4;
     }
 }

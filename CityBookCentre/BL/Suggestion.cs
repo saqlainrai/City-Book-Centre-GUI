@@ -8,20 +8,12 @@ namespace CityBookCentre.BL
 {
     public class Suggestion
     {
-        public string name;
-        public string suggestion;
+        public string name { get; set; }
+        public string suggestion { get; set; }
         public Suggestion(string book, string review)
         {
             name = book;
             suggestion = review;
-        }
-
-        public DL.SuggestionDL SuggestionDL
-        {
-            get => default;
-            set
-            {
-            }
         }
     }
 }
