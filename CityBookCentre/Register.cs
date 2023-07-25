@@ -42,6 +42,7 @@ namespace CityBookCentre
                         if (addUserInFile("UsersData.txt", temp))
                         {
                             MessageBox.Show("The User is Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            btnClear_Click(sender, e);
                         }
                         else
                         {
@@ -63,6 +64,7 @@ namespace CityBookCentre
                 MessageBox.Show("Please Select a Valid Name", "Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private bool addUserInFile(string path, User temp)
         {
             if (File.Exists(path))
@@ -92,24 +94,15 @@ namespace CityBookCentre
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void panel5_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+            this.Close();
+            Program.main_welcome_window.Show();
         }
     }
 }

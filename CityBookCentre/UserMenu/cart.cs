@@ -16,6 +16,12 @@ namespace CityBookCentre.UserMenu
         public cart()
         {
             InitializeComponent();
+            billForm1.DoneClicked += BillForm1_DoneClicked;
+        }
+
+        private void BillForm1_DoneClicked(object sender, EventArgs e)
+        {
+            Reset_Controls();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,7 +81,9 @@ namespace CityBookCentre.UserMenu
             dataGridView1.Columns.Clear();
             dataGridView1.Refresh();
 
+            billForm1.form = "Purchase";
 
+            button1.Focus();
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {

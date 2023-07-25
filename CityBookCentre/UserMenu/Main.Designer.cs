@@ -33,7 +33,16 @@
             this.header = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnOrders = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnList = new System.Windows.Forms.Button();
+            this.btnReviews = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLend = new System.Windows.Forms.Button();
+            this.btnPurchase = new System.Windows.Forms.Button();
+            this.btnCart = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconCross = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,17 +62,8 @@
             this.privacyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whatsNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnOrders = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnList = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnLend = new System.Windows.Forms.Button();
-            this.btnPurchase = new System.Windows.Forms.Button();
-            this.btnCart = new System.Windows.Forms.Button();
-            this.iconCross = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lendBook1 = new CityBookCentre.UserMenu.lendBook();
             this.feedback1 = new CityBookCentre.UserMenu.feedback();
             this.previousOrders1 = new CityBookCentre.UserMenu.previousOrders();
@@ -75,11 +75,11 @@
             this.panelHeader.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -137,6 +137,137 @@
             this.panelMenu.Size = new System.Drawing.Size(270, 692);
             this.panelMenu.TabIndex = 14;
             // 
+            // btnOrders
+            // 
+            this.btnOrders.FlatAppearance.BorderSize = 0;
+            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrders.Image = global::CityBookCentre.Properties.Resources.purchased;
+            this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrders.Location = new System.Drawing.Point(0, 363);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.Size = new System.Drawing.Size(270, 55);
+            this.btnOrders.TabIndex = 9;
+            this.btnOrders.Text = "View My Previous Orders";
+            this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CityBookCentre.Properties.Resources.icon_main;
+            this.pictureBox1.Image = global::CityBookCentre.Properties.Resources.icon_main;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(270, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnList
+            // 
+            this.btnList.FlatAppearance.BorderSize = 0;
+            this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnList.Image = global::CityBookCentre.Properties.Resources.list;
+            this.btnList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnList.Location = new System.Drawing.Point(0, 150);
+            this.btnList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(270, 55);
+            this.btnList.TabIndex = 7;
+            this.btnList.Text = "View List of Books";
+            this.btnList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnList.UseCompatibleTextRendering = true;
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // btnReviews
+            // 
+            this.btnReviews.FlatAppearance.BorderSize = 0;
+            this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviews.Image = global::CityBookCentre.Properties.Resources.tip;
+            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviews.Location = new System.Drawing.Point(0, 416);
+            this.btnReviews.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReviews.Name = "btnReviews";
+            this.btnReviews.Size = new System.Drawing.Size(270, 55);
+            this.btnReviews.TabIndex = 5;
+            this.btnReviews.Text = "Reviews/Suggestions";
+            this.btnReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Image = global::CityBookCentre.Properties.Resources.exit;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 470);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(270, 55);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
+            // btnLend
+            // 
+            this.btnLend.FlatAppearance.BorderSize = 0;
+            this.btnLend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLend.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLend.Image = global::CityBookCentre.Properties.Resources.update;
+            this.btnLend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLend.Location = new System.Drawing.Point(0, 310);
+            this.btnLend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLend.Name = "btnLend";
+            this.btnLend.Size = new System.Drawing.Size(270, 55);
+            this.btnLend.TabIndex = 3;
+            this.btnLend.Text = "Lend a Book";
+            this.btnLend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLend.UseVisualStyleBackColor = true;
+            this.btnLend.Click += new System.EventHandler(this.btnLend_Click);
+            // 
+            // btnPurchase
+            // 
+            this.btnPurchase.FlatAppearance.BorderSize = 0;
+            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchase.Image")));
+            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchase.Location = new System.Drawing.Point(0, 204);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(270, 55);
+            this.btnPurchase.TabIndex = 1;
+            this.btnPurchase.Text = "Purchase a Book";
+            this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPurchase.UseVisualStyleBackColor = true;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
+            // 
+            // btnCart
+            // 
+            this.btnCart.FlatAppearance.BorderSize = 0;
+            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCart.Image = global::CityBookCentre.Properties.Resources.bin;
+            this.btnCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCart.Location = new System.Drawing.Point(0, 257);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Size = new System.Drawing.Size(270, 55);
+            this.btnCart.TabIndex = 2;
+            this.btnCart.Text = "View Your Cart";
+            this.btnCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCart.UseVisualStyleBackColor = true;
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Wheat;
@@ -147,6 +278,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 30);
             this.panel1.TabIndex = 17;
+            // 
+            // iconCross
+            // 
+            this.iconCross.BackColor = System.Drawing.Color.Red;
+            this.iconCross.Location = new System.Drawing.Point(1269, 2);
+            this.iconCross.Name = "iconCross";
+            this.iconCross.Size = new System.Drawing.Size(26, 26);
+            this.iconCross.TabIndex = 0;
+            this.iconCross.TabStop = false;
+            this.iconCross.Click += new System.EventHandler(this.iconCross_Click);
             // 
             // menuStrip1
             // 
@@ -291,6 +432,16 @@
             this.panel2.Size = new System.Drawing.Size(1031, 90);
             this.panel2.TabIndex = 18;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gotham Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(536, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 19);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -303,156 +454,6 @@
             this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseHover);
             this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
-            // 
-            // btnOrders
-            // 
-            this.btnOrders.FlatAppearance.BorderSize = 0;
-            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrders.Image = global::CityBookCentre.Properties.Resources.purchased;
-            this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(0, 363);
-            this.btnOrders.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(270, 55);
-            this.btnOrders.TabIndex = 9;
-            this.btnOrders.Text = "View My Previous Orders";
-            this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOrders.UseVisualStyleBackColor = true;
-            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::CityBookCentre.Properties.Resources.icon_main;
-            this.pictureBox1.Image = global::CityBookCentre.Properties.Resources.icon_main;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(270, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnList
-            // 
-            this.btnList.FlatAppearance.BorderSize = 0;
-            this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnList.Image = global::CityBookCentre.Properties.Resources.list;
-            this.btnList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnList.Location = new System.Drawing.Point(0, 150);
-            this.btnList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(270, 55);
-            this.btnList.TabIndex = 7;
-            this.btnList.Text = "View List of Books";
-            this.btnList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnList.UseCompatibleTextRendering = true;
-            this.btnList.UseVisualStyleBackColor = true;
-            this.btnList.Click += new System.EventHandler(this.btnList_Click);
-            // 
-            // btnReviews
-            // 
-            this.btnReviews.FlatAppearance.BorderSize = 0;
-            this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviews.Image = global::CityBookCentre.Properties.Resources.tip;
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(0, 416);
-            this.btnReviews.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(270, 55);
-            this.btnReviews.TabIndex = 5;
-            this.btnReviews.Text = "Reviews/Suggestions";
-            this.btnReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReviews.UseVisualStyleBackColor = true;
-            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Image = global::CityBookCentre.Properties.Resources.exit;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 470);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(270, 55);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
-            // 
-            // btnLend
-            // 
-            this.btnLend.FlatAppearance.BorderSize = 0;
-            this.btnLend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLend.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLend.Image = global::CityBookCentre.Properties.Resources.update;
-            this.btnLend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLend.Location = new System.Drawing.Point(0, 310);
-            this.btnLend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLend.Name = "btnLend";
-            this.btnLend.Size = new System.Drawing.Size(270, 55);
-            this.btnLend.TabIndex = 3;
-            this.btnLend.Text = "Lend a Book";
-            this.btnLend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLend.UseVisualStyleBackColor = true;
-            this.btnLend.Click += new System.EventHandler(this.btnLend_Click);
-            // 
-            // btnPurchase
-            // 
-            this.btnPurchase.FlatAppearance.BorderSize = 0;
-            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchase.Image")));
-            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchase.Location = new System.Drawing.Point(0, 204);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(270, 55);
-            this.btnPurchase.TabIndex = 1;
-            this.btnPurchase.Text = "Purchase a Book";
-            this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPurchase.UseVisualStyleBackColor = true;
-            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
-            // 
-            // btnCart
-            // 
-            this.btnCart.FlatAppearance.BorderSize = 0;
-            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCart.Image = global::CityBookCentre.Properties.Resources.bin;
-            this.btnCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCart.Location = new System.Drawing.Point(0, 257);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.Size = new System.Drawing.Size(270, 55);
-            this.btnCart.TabIndex = 2;
-            this.btnCart.Text = "View Your Cart";
-            this.btnCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCart.UseVisualStyleBackColor = true;
-            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
-            // 
-            // iconCross
-            // 
-            this.iconCross.BackColor = System.Drawing.Color.Red;
-            this.iconCross.Location = new System.Drawing.Point(1269, 2);
-            this.iconCross.Name = "iconCross";
-            this.iconCross.Size = new System.Drawing.Size(26, 26);
-            this.iconCross.TabIndex = 0;
-            this.iconCross.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(536, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 19);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
             // 
             // lendBook1
             // 
@@ -492,6 +493,7 @@
             // 
             // welcome1
             // 
+            this.welcome1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("welcome1.BackgroundImage")));
             this.welcome1.Location = new System.Drawing.Point(49, 5);
             this.welcome1.Name = "welcome1";
             this.welcome1.Size = new System.Drawing.Size(933, 464);
@@ -532,14 +534,14 @@
             this.panelHeader.PerformLayout();
             this.panelMain.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCross)).EndInit();
             this.ResumeLayout(false);
 
         }

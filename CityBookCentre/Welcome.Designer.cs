@@ -221,6 +221,7 @@
             this.panel2.Size = new System.Drawing.Size(30, 28);
             this.panel2.TabIndex = 17;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
+            
             // 
             // heading
             // 

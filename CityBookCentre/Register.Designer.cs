@@ -64,7 +64,8 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(26, 24);
             this.panel5.TabIndex = 4;
-            this.panel5.Click += new System.EventHandler(this.label4_Click);
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox2
             // 
@@ -137,7 +138,6 @@
             this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Role";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -161,7 +161,6 @@
             this.roleBox.Name = "roleBox";
             this.roleBox.Size = new System.Drawing.Size(243, 24);
             this.roleBox.TabIndex = 2;
-            this.roleBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnSubmit
             // 
@@ -169,7 +168,7 @@
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(114, 232);
+            this.btnSubmit.Location = new System.Drawing.Point(107, 232);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(144, 41);
             this.btnSubmit.TabIndex = 2;
@@ -186,7 +185,6 @@
             this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtName
             // 
@@ -205,7 +203,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "City Book Centre";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Register
             // 

@@ -1,9 +1,8 @@
 MathsUpdate,10,100,1000
-Programming,600,1,220
+Programming,600,0,220
 Islamiat,120,9,100
 HTML/CSS,1500,8,250
-DSAMalik,1,2,3
 Chemistry,52,42,75
 Maths,3,2,1
 Physics,3,2,1
-NewBook,1,2,3
+AddthistoFile,1,2,3

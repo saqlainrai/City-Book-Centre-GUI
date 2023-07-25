@@ -17,6 +17,12 @@ namespace CityBookCentre.UserMenu
         public lendBook()
         {
             InitializeComponent();
+            billForm1.DoneClicked += BillForm1_DoneClicked;
+        }
+
+        private void BillForm1_DoneClicked(object sender, EventArgs e)
+        {
+            Reset_Controls();
         }
 
         private void lendBook_Load(object sender, EventArgs e)
@@ -58,7 +64,14 @@ namespace CityBookCentre.UserMenu
         {
             if (!string.IsNullOrEmpty(txtName.Text))
             {
-                billForm1.Visible = true;
+                if (int.Parse(txtStock.Text)!=0)
+                {
+                    billForm1.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("The Book is out of Stock", "Sorry!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
@@ -74,6 +87,8 @@ namespace CityBookCentre.UserMenu
             txtPrice.Text = string.Empty;
             txtStock.Text = string.Empty;
             txtLendingCost.Text = string.Empty;
+
+            billForm1.Visible = false;
 
             textBox1.Focus();
         }

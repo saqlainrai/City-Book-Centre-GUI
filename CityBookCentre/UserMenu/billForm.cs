@@ -13,9 +13,12 @@ namespace CityBookCentre.UserMenu
 {
     public partial class billForm : UserControl
     {
+        public string form;
+        public event EventHandler DoneClicked;
         public billForm()
         {
             InitializeComponent();
+            form = "Unknown";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,8 +31,16 @@ namespace CityBookCentre.UserMenu
                 {
                     if (textBox1.Text != string.Empty && textBox2.Text != string.Empty)
                     {
+                        if (form == "Purchase")
+                        {
+                            UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                        }
+                        else
+                        {
+                            ActiveBookDL.allActiveBooks[Program.idx].setStock(ActiveBookDL.allActiveBooks[Program.idx].getStock() - 1);
+                        }
                         MessageBox.Show("The Order is Placed Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                        
                     }
                     else
                     {
@@ -41,8 +52,16 @@ namespace CityBookCentre.UserMenu
                 {
                     if (textBox1.Text != string.Empty && textBox2.Text != string.Empty)
                     {
+                        if (form == "Purchase")
+                        {
+                            UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                        }
+                        else
+                        {
+                            ActiveBookDL.allActiveBooks[Program.idx].setStock(ActiveBookDL.allActiveBooks[Program.idx].getStock() - 1);
+                        }
                         MessageBox.Show("The Order is Placed Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                        
                     }
                     else
                     {
@@ -53,16 +72,22 @@ namespace CityBookCentre.UserMenu
                 {
                     MessageBox.Show("Please Enter an Online Source", "Failure", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-                Reset_Controls();
             }
             //cash on delivery
             else if (!checkBox1.Checked && checkBox2.Checked)
             {
                 radioButton3.Checked = false;
                 radioButton4.Checked = false;
+                if (form == "Purchase")
+                {
+                    UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                }
+                else
+                {
+                    ActiveBookDL.allActiveBooks[Program.idx].setStock(ActiveBookDL.allActiveBooks[Program.idx].getStock() - 1);
+                }
                 MessageBox.Show("The Order is Placed Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                UserBookDL.transferDatatoNextfile(Program.refUserName, Program.refUserPassword, UserBookDL.wholePurchasedBooks, BookDL.purchasedBooks, UserBookDL.wholeBoughtBooks);
+                
             }
             else
             {
@@ -70,6 +95,7 @@ namespace CityBookCentre.UserMenu
             }
 
             Reset_Controls();
+            DoneClicked?.Invoke(this, null);
         }
 
         private void billForm_Load(object sender, EventArgs e)

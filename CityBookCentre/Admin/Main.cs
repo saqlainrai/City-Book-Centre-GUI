@@ -62,7 +62,12 @@ namespace CityBookCentre.Admin
         }
         private void iconCross_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult iExit;
+            iExit = MessageBox.Show("Do you want to Exit", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (iExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
         private void btnList_Click(object sender, EventArgs e)
         {
@@ -256,6 +261,8 @@ namespace CityBookCentre.Admin
         }
         private void btnReviews_Click(object sender, EventArgs e)
         {
+            reviews1.Reset_Controls();
+
             if (btnReviews.Focused)
             {
                 btnReviews.BackColor = Color.DimGray;

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CityBookCentre.Admin
 {
@@ -28,7 +29,10 @@ namespace CityBookCentre.Admin
 
             ActiveBook temp = new ActiveBook(txtName.Text, int.Parse(txtPrice.Text), int.Parse(txtStock.Text), int.Parse(txtCost.Text));
             ActiveBookDL.allActiveBooks.Add(temp);
-
+            string path = "BooksData.txt";
+            StreamWriter file = new StreamWriter(path, true);
+            file.WriteLine(temp.getName() + "," + temp.getPrice() + "," + temp.getStock() + "," + temp.getLendingCost());
+            file.Close();
             MessageBox.Show("The Book is Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Reset_Controls();

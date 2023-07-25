@@ -62,7 +62,7 @@
             this.txtReference.Name = "txtReference";
             this.txtReference.Size = new System.Drawing.Size(355, 26);
             this.txtReference.TabIndex = 1;
-            this.txtReference.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // button1
             // 
@@ -73,7 +73,7 @@
             this.button1.Location = new System.Drawing.Point(642, 362);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 30);
-            this.button1.TabIndex = 19;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Purchase Book";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -167,7 +167,7 @@
             this.label6.Size = new System.Drawing.Size(142, 25);
             this.label6.TabIndex = 21;
             this.label6.Text = "Details of Book";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+
             // 
             // button3
             // 
@@ -178,7 +178,7 @@
             this.button3.Location = new System.Drawing.Point(715, 91);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(89, 30);
-            this.button3.TabIndex = 22;
+            this.button3.TabIndex = 2;
             this.button3.Text = "OK";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);

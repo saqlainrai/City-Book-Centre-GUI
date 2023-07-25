@@ -24,6 +24,9 @@ namespace CityBookCentre.UserMenu
             dataGridView1.DataSource = null;
             dataGridView1.AutoGenerateColumns = false;
 
+            BookDL.boughtBooks.Clear();
+            UserBookDL.addBoughtBookDatafromFile(Program.refUserName, Program.refUserPassword, UserBookDL.wholeBoughtBooks, BookDL.boughtBooks);
+
             if (BookDL.boughtBooks.Count > 0)
             {
                 // Add columns manually and arrange them according to your desire

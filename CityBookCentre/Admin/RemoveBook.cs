@@ -33,21 +33,16 @@ namespace CityBookCentre.Admin
         private void button1_Click(object sender, EventArgs e)
         {
             // Get the selected row, if any
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count == 1)
             {
-                int n = dataGridView1.SelectedRows.Count;
-                int selectedFirstIndex = dataGridView1.SelectedCells[0].RowIndex - (n - 1);
+                int selectedFirstIndex = dataGridView1.SelectedCells[0].RowIndex;
                 ////DataGridViewRow selectedRow = dataGridView.SelectedRows[0];
 
                 //// Remove the selected row from the DataGridView
                 //dataGridView1.Rows.RemoveAt(selectedFirstIndex);
 
-
-                for (int i = n-1; i >= 0; i--)
-                {
-                    ActiveBookDL.allActiveBooks.RemoveAt(selectedFirstIndex + i);
-                }
-
+                ActiveBookDL.allActiveBooks.RemoveAt(selectedFirstIndex);
+                ActiveBookDL.updateBooksDatainFile(ActiveBookDL.allActiveBooks);
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = ActiveBookDL.allActiveBooks;
             }

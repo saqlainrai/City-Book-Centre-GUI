@@ -99,7 +99,12 @@ namespace CityBookCentre
         }
         private void panel2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult iExit;
+            iExit = MessageBox.Show("Do you want to Exit", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (iExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

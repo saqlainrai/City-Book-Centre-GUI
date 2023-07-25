@@ -68,6 +68,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox1.Location = new System.Drawing.Point(246, 110);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(316, 41);
             this.textBox1.TabIndex = 4;
             // 
@@ -76,6 +77,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox2.Location = new System.Drawing.Point(246, 266);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(316, 41);
             this.textBox2.TabIndex = 5;
             // 
@@ -84,6 +86,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox3.Location = new System.Drawing.Point(246, 188);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(316, 41);
             this.textBox3.TabIndex = 7;
             // 

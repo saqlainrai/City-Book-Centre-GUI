@@ -104,14 +104,14 @@
             this.txtLendingCost.Location = new System.Drawing.Point(634, 349);
             this.txtLendingCost.Name = "txtLendingCost";
             this.txtLendingCost.Size = new System.Drawing.Size(256, 22);
-            this.txtLendingCost.TabIndex = 7;
+            this.txtLendingCost.TabIndex = 8;
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(633, 312);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(256, 22);
-            this.txtStock.TabIndex = 8;
+            this.txtStock.TabIndex = 7;
             // 
             // button1
             // 

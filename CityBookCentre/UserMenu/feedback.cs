@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CityBookCentre.UserMenu
 {
@@ -17,27 +19,15 @@ namespace CityBookCentre.UserMenu
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text != string.Empty && richTextBox1.Text != "---Enter your Comment Here---")
             {
                 SuggestionDL.suggestions.Add(new BL.Suggestion(ActiveBookDL.allActiveBooks[Program.idx].getName(), richTextBox1.Text));
+                string path = "suggestions.txt";
+                StreamWriter file = new StreamWriter(path, true);
+                file.WriteLine(ActiveBookDL.allActiveBooks[Program.idx].getName() + "," + richTextBox1.Text);
+                file.Close();
                 MessageBox.Show("Your Response is Recorded Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else

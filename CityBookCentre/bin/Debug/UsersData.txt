@@ -16,3 +16,5 @@ s,1,Admin
 sa,12,User
 dsfj,614,Admin
 random,logic,Admin
+run,now,Admin
+qwerty,12345678,Admin

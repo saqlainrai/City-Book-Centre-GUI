@@ -109,10 +109,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(565, 336);
+            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(548, 327);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 32);
+            this.button1.Size = new System.Drawing.Size(127, 41);
             this.button1.TabIndex = 10;
             this.button1.Text = "Add Book";
             this.button1.UseVisualStyleBackColor = false;

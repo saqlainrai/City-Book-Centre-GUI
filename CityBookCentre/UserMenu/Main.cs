@@ -75,12 +75,6 @@ namespace CityBookCentre.UserMenu
             previousOrders1.Visible = false;
             feedback1.Visible = true;
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnOrders_Click(object sender, EventArgs e)
         {
             previousOrders1.Reset_Controls();
@@ -264,6 +258,16 @@ namespace CityBookCentre.UserMenu
             {
                 label2.Location = new Point(label2.Left + 20, label2.Top);
                 Thread.Sleep(100);
+            }
+        }
+
+        private void iconCross_Click(object sender, EventArgs e)
+        {
+            DialogResult iExit;
+            iExit = MessageBox.Show("Do you want to Exit", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (iExit == DialogResult.Yes)
+            {
+                Application.Exit();
             }
         }
     }

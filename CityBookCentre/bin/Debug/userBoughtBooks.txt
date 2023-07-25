@@ -26,3 +26,8 @@ w,2,Programming,600
 saqlain,2,Islamiat,120
 w,2,Chemistry,52
 saqlain,2,Maths,3
+saqlain,2,Programming,600
+saqlain,2,Maths,3
+saqlain,2,HTML/CSS,1500
+saqlain,2,Maths,3
+saqlain,2,AddthistoFile,1

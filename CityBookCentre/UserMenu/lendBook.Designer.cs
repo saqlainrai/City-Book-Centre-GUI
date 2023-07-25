@@ -52,7 +52,7 @@
             this.button2.Location = new System.Drawing.Point(434, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 31);
-            this.button2.TabIndex = 12;
+            this.button2.TabIndex = 10;
             this.button2.Text = "OK";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -72,7 +72,7 @@
             this.label2.Location = new System.Drawing.Point(80, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 25);
-            this.label2.TabIndex = 10;
+            this.label2.TabIndex = 12;
             this.label2.Text = "Comments";
             // 
             // textBox1
@@ -112,7 +112,7 @@
             this.button1.Location = new System.Drawing.Point(25, 457);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(464, 38);
-            this.button1.TabIndex = 34;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Lend Book";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

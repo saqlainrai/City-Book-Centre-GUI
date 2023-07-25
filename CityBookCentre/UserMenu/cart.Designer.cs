@@ -72,7 +72,7 @@
             this.label1.Location = new System.Drawing.Point(252, 376);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 20);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 4;
             this.label1.Text = "Total: ";
             // 
             // textBox1
@@ -93,7 +93,7 @@
             this.button2.Location = new System.Drawing.Point(531, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(489, 34);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 2;
             this.button2.Text = "Place the Order";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
